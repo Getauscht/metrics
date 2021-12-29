@@ -1,0 +1,14 @@
+name: "🎫 Gists"
+category: github
+index: 21
+supports:
+  - user
+scopes:
+  - public_access
+inputs:
+
+  # Enable or disable plugin
+  plugin_gists:
+    description: Display gists metrics
+    type: boolean
+    default: no

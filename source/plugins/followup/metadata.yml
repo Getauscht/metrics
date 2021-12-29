@@ -1,0 +1,32 @@
+name: "🎟️ Follow-up of issues and pull requests"
+category: github
+index: 7
+supports:
+  - user
+  - organization
+  - repository
+scopes:
+  - public_access
+inputs:
+
+  # Enable or disable plugin
+  plugin_followup:
+    description: Display follow-up of repositories issues and pull requests
+    type: boolean
+    default: no
+
+  # Sections to display
+  plugin_followup_sections:
+    description: Sections to display
+    type: array
+    format: comma-separated
+    default: repositories
+    values:
+      - repositories # Overall status of issues and pull requests on your repositories
+      - user         # Overall status of issues and pull requests you have created on GitHub
+
+  # Compute issues and pull requests per repositories with special highlighting for maintainers and specified users
+  plugin_followup_indepth:
+    description: Indepth follow-up processing
+    type: boolean
+    default: no

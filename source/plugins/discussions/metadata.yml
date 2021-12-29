@@ -1,0 +1,14 @@
+name: "💬 Discussions"
+category: github
+index: 16
+supports:
+  - user
+scopes:
+  - public_access
+inputs:
+
+  # Enable or disable plugin
+  plugin_discussions:
+    description: GitHub discussions metrics
+    type: boolean
+    default: no

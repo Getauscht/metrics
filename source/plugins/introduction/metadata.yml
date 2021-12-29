@@ -1,0 +1,22 @@
+name: "🙋 Introduction"
+category: github
+index: 22
+supports:
+  - user
+  - organization
+  - repository
+scopes:
+  - public_access
+inputs:
+
+  # Enable or disable plugin
+  plugin_introduction:
+    description: Display account or repository introduction
+    type: boolean
+    default: no
+
+  # Display introduction section title
+  plugin_introduction_title:
+    description: Display introduction section title
+    type: boolean
+    default: yes

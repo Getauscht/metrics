@@ -1,0 +1,16 @@
+name: "✨ Stargazers over last weeks"
+category: github
+index: 10
+supports:
+  - user
+  - organization
+  - repository
+scopes:
+  - public_access
+inputs:
+
+  # Enable or disable plugin
+  plugin_stargazers:
+    description: Display stargazers metrics
+    type: boolean
+    default: no

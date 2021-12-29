@@ -1,0 +1,154 @@
+{
+  "//": "Example of configuration for metrics web instance",
+  "//": "====================================================================",
+
+  "token": "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",  "//": "GitHub Personal Token (required)",
+  "restricted": [],                "//": "Authorized users (empty to disable)",
+  "maxusers": 0,                   "//": "Maximum users, (0 to disable)",
+  "cached": 3600000,               "//": "Cache time rendered metrics (0 to disable)",
+  "ratelimiter": null,             "//": "Rate limiter (see express-rate-limit documentation)",
+  "port": 3000,                    "//": "Listening port",
+  "optimize": true,                "//": "SVG optimization",
+  "debug": false,                  "//": "Debug logs",
+  "debug.headless": false,         "//": "Debug puppeteer process",
+  "mocked": false,                 "//": "Use mocked data instead of live APIs (use 'force' to use mocked token even if real token are defined)",
+  "repositories": 100,             "//": "Number of repositories to use",
+  "padding": ["0", "8 + 11%"],     "//": "Image padding (default)",
+  "hosted": {
+    "by": "",                      "//": "Web instance host (displayed in footer)",
+    "link": "",                    "//": "Web instance host link (displayed in footer)"
+  },
+  "community": {
+    "templates": [],               "//": "Additional community templates to setup"
+  },
+  "templates": {
+    "default": "classic",          "//": "Default template",
+    "enabled": [],                 "//": "Enabled templates (empty to enable all)"
+  },
+  "extras": {
+    "default": false,              "//": "Default extras state (advised to let 'false' unless in debug mode)",
+    "css": false,                  "//": "Allow use of 'extras.css' option",
+    "features": false,             "//": "Enable extra features (advised to let 'false' on web instances)"
+  },
+  "plugins.default": false,        "//": "Default plugin state (advised to let 'false' unless in debug mode)",
+  "plugins": {                     "//": "Global plugin configuration",
+    "isocalendar":{
+      "enabled": true,            "//": "Display an isometric view of your commits calendar"
+    },
+    "languages":{
+      "enabled": true,            "//": "Display most used languages metrics"
+    },
+    "topics":{
+      "enabled": true,            "//": "Display starred topics"
+    },
+    "stars":{
+      "enabled": true,            "//": "Display recently starred repositories"
+    },
+    "licenses":{
+      "enabled": true,            "//": "Display licenses informations"
+    },
+    "habits":{
+      "enabled": true,            "//": "Display coding habits metrics"
+    },
+    "contributors":{
+      "enabled": true,            "//": "Display repository contributors"
+    },
+    "followup":{
+      "enabled": true,            "//": "Display follow-up of repositories issues and pull requests"
+    },
+    "reactions":{
+      "enabled": true,            "//": "Display average issue comments reactions"
+    },
+    "people":{
+       "enabled": true,            "//": "Display GitHub users from various affiliations"
+    },
+    "stargazers":{
+       "enabled": true,            "//": "Display stargazers metrics"
+    },
+    "projects":{
+       "enabled": true,            "//": "Display active projects"
+    },
+    "code":{
+       "enabled": true,            "//": "Display a random code snippet from recent activity"
+    },
+    "activity":{
+       "enabled": true,            "//": "Display recent activity"
+    },
+    "achievements":{
+       "enabled": true,            "//": "Display achievements"
+    },
+    "notable":{
+       "enabled": true,            "//": "Display notable contributions in organizations"
+    },
+    "discussions":{
+       "enabled": true,            "//": "GitHub discussions metrics"
+    },
+    "support":{
+       "enabled": true,            "//": "GitHub Community Support metrics"
+    },
+    "lines":{
+       "enabled": true,            "//": "Display lines of code metrics"
+    },
+    "traffic":{
+       "enabled": true,            "//": "Display repositories traffic metrics"
+    },
+    "repositories":{
+       "enabled": true,            "//": "Display chosen featured repositories"
+    },
+    "gists":{
+       "enabled": true,            "//": "Display gists metrics"
+    },
+    "introduction":{
+       "enabled": true,            "//": "Display account or repository introduction"
+    },
+    "sponsors":{
+       "enabled": true,            "//": "Display GitHub sponsors"
+    },
+    "skyline":{
+       "enabled": true,            "//": "Display GitHub Skyline 3D calendar"
+    },
+    "pagespeed":{
+      "token": null,               "//":"PageSpeed token",
+       "enabled": true,            "//": "Display a website Google PageSpeed metrics"
+    },
+    "music":{
+      "token": null,               "//":"Music provider personal token",
+       "enabled": true,            "//": "Display your music tracks"
+    },
+    "tweets":{
+      "token": null,               "//":"Twitter API token",
+       "enabled": true,            "//": "Display recent tweets"
+    },
+    "anilist":{
+       "enabled": true,            "//": "Display data from your AniList account"
+    },
+    "stackoverflow":{
+       "enabled": true,            "//": "Stackoverflow metrics"
+    },
+    "posts":{
+       "enabled": true,            "//": "Display recent posts"
+    },
+    "rss":{
+       "enabled": true,            "//": "Display RSS feed"
+    },
+    "wakatime":{
+      "token": null,               "//":"WakaTime API token",
+       "enabled": true,            "//": "Display WakaTime stats"
+    },
+    "stock":{
+      "token": null,               "//":"Yahoo Finance token",
+       "enabled": true,            "//": "Display stock prices of a given company"
+    },
+    "nightscout":{
+       "enabled": true,            "//": "Displays Blood Glucose"
+    },
+    "poopmap":{
+      "token": null,               "//":"PoopMap API token",
+       "enabled": true,            "//": "Display PoopMap stats"
+    },
+    "screenshot":{
+       "enabled": true,            "//": "Display a screenshot of any website"
+    },
+    "//": ""
+  }
+}
