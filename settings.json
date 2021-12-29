@@ -7,7 +7,7 @@
   "maxusers": 0,                   "//": "Maximum users, (0 to disable)",
   "cached": 3600000,               "//": "Cache time rendered metrics (0 to disable)",
   "ratelimiter": null,             "//": "Rate limiter (see express-rate-limit documentation)",
-  "port": 3000,                    "//": "Listening port",
+  "port": 8080,                    "//": "Listening port",
   "optimize": true,                "//": "SVG optimization",
   "debug": false,                  "//": "Debug logs",
   "debug.headless": false,         "//": "Debug puppeteer process",
